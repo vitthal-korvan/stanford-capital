@@ -1,4 +1,5 @@
 import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer"
 import LenisProvider from "@/components/providers/lenis-provider";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
             <main style={{ paddingTop: '80px', minHeight: 'calc(100vh - 300px)' }}>
               {children}
             </main>
-          {/* Footer will go here */}
+          <Footer />
         </LenisProvider>
       </body>
     </html>
